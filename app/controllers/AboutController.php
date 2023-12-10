@@ -5,7 +5,7 @@ require_once "app/models/AboutModel.php";
 
 class AboutController extends Controller
 {
-    public $aboutModel;
+    private $aboutModel;
     public $aboutTitle;
     public $aboutContent;
 

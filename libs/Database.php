@@ -26,7 +26,7 @@ class Database
             if(is_null($params)):
                 $this->stmt = $this->pdo->query($query);
             else:
-                $this->stmt = $this->pdo->prepare($query, $params);
+                $this->stmt = $this->pdo->prepare($query);
                 $this->stmt->execute($params);
             endif;
 
@@ -36,5 +36,46 @@ class Database
         {
             die($e->getMessage());
         }
+    }
+
+    public function getRows($query, $params=null)
+    {
+        try {
+            if(is_null($params)):
+                $this->stmt = $this->pdo->query($query);
+            else:
+                $this->stmt = $this->pdo->prepare($query);
+                $this->stmt->execute($params);
+            endif;
+
+            return $this->stmt->fetchAll(PDO::FETCH_OBJ);
+        }
+        catch(PDOException $e)
+        {
+            die($e->getMessage());
+        }
+    }
+
+    public function insert($query, $params=null)
+    {
+        try {
+            if(is_null($params)):
+                $this->stmt = $this->pdo->query($query);
+            else:
+                $this->stmt = $this->pdo->prepare($query);
+                $this->stmt->execute($params);
+            endif;
+
+            return $this->pdo->lastInsertId();
+        }
+        catch(PDOException $e)
+        {
+            die($e->getMessage());
+        }
+    }
+
+    public function __destruct()
+    {
+        $this->pdo = null;
     }
 }

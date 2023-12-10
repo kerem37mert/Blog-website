@@ -60,7 +60,7 @@ const lenControl = () => {
     }
 
     if(!(message.value.length >= 20 && message.value.length <= 500)) {
-        errorMessage += "* Mesaj alanı 5 ile 50 karakter arası uzunlukta olmalıdır<br>";
+        errorMessage += "* Mesaj alanı 5 ile 500 karakter arası uzunlukta olmalıdır<br>";
         message.style.borderColor = "#FF3333";
         error++;
     }

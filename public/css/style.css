@@ -375,6 +375,22 @@ section.contents {
     margin-top: 20px;
     display: none;
 }
+
+.contact-success {
+    background-color: #B6BBC4;
+    color: #161A30;
+    font-size: 0.8em;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.contact-false {
+    background-color: #FF3333;
+    color: #F0ECE5;
+    font-size: 0.8em;
+    padding: 5px;
+    margin-top: 20px;
+}
 /*CONTACT END */
 
 
@@ -392,6 +408,7 @@ section.contents {
 .about p {
     margin-top: 10px;
     font-size: 1em;
+    text-align: justify;
 }
 /* ABOUT END */
 
@@ -419,6 +436,26 @@ section.contents {
 }
 
 /* Contents END */
+
+
+
+/* Content Start */
+.content {
+    background-color: #B6BBC4;
+    color: #161A30;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 1.5em;
+}
+
+.content p {
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: justify;
+}
+/* Content END */
 
 
 /** For Mobile Devices **/

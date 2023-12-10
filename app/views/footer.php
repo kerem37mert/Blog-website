@@ -1,7 +1,7 @@
     <footer>
         <div class="footer-flex">
             <div class="footer-logo">
-                <a href="">
+                <a href="<?php echo BASE_URL ?>">
                     &lt;Keremmert
                     <br>
                     .app /&gt;

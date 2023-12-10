@@ -16,25 +16,15 @@
                 </article>
             </section>
             <section class="home-contents">
+                <?php foreach ($this->contentsData as $contentData): ?>
                 <article class="home-content">
-                    <a href="">Lorem, ipsum.</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, id! Dignissimos blanditiis ullam adipisci quisquam?</p>
+                    <a href="<?php echo BASE_URL."content/".$contentData->content_url; ?>"><?php echo $contentData->content_title ?></a>
+                    <p><?php echo $contentData->content_desc ?></p>
                 </article>
-                <article class="home-content">
-                    <a href="">Lorem, ipsum.</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, id! Dignissimos blanditiis ullam adipisci quisquam?</p>
-                </article>
-                <article class="home-content">
-                    <a href="">Lorem, ipsum.</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, id! Dignissimos blanditiis ullam adipisci quisquam?</p>
-                </article>
-                <article class="home-content">
-                    <a href="">Lorem, ipsum.</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, id! Dignissimos blanditiis ullam adipisci quisquam?</p>
-                </article>
+                <?php endforeach; ?>
             </section>
             <section class="more-content">
-                <a href="">Daha fazla</a>
+                <a href="<?php echo BASE_URL; ?>contents">Daha fazla</a>
             </section>
         </section>
         <!-- Right Bar Start -->
