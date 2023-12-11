@@ -5,37 +5,23 @@
             </form>
         </section>
         <section class="vertical-menu">
-            <h3 class="menu-title">Menu Baslik</h3>
+            <h3 class="menu-title">Rastgele İçerikler</h3>
             <ul>
+                <?php foreach($this->randomContents as $randomContent): ?>
                 <li>
-                    <a href="">Menu 1</a>
+                    <a href="<?php echo BASE_URL."content/".$randomContent->content_url; ?>"><?php echo $randomContent->content_title ?></a>
                 </li>
-                <li>
-                    <a href="">Menu 1</a>
-                </li>
-                <li>
-                    <a href="">Menu 1</a>
-                </li>
-                <li>
-                    <a href="">Menu 1</a>
-                </li>
+                <?php endforeach; ?>
             </ul>
         </section>
         <section class="vertical-menu">
-            <h3 class="menu-title">Menu Baslik</h3>
+            <h3 class="menu-title">Son İçerikler</h3>
             <ul>
+               <?php foreach($this->lastContents as $lastContent): ?>
                 <li>
-                    <a href="">Menu 1</a>
+                    <a href="<?php echo BASE_URL."/content/".$lastContent->content_url; ?>"><?php echo $lastContent->content_title; ?></a>
                 </li>
-                <li>
-                    <a href="">Menu 1</a>
-                </li>
-                <li>
-                    <a href="">Menu 1</a>
-                </li>
-                <li>
-                    <a href="">Menu 1</a>
-                </li>
+                <?php endforeach; ?>
             </ul>
         </section>
     </aside>

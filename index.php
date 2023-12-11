@@ -52,7 +52,7 @@ switch ($address[0]):
         break;
 
     case "content":
-        if(isset($address[1])):
+        if(isset($address[2])):
             header("location:".BASE_URL."404");
             exit;
         endif;
@@ -78,5 +78,7 @@ switch ($address[0]):
     //OPERATIONS
 
     default:
-        echo "404";
+        require_once "app/controllers/PageNotFoundController.php";
+        $pageNotFoundController = new PageNotFoundController();
+        $pageNotFoundController->index();
 endswitch;

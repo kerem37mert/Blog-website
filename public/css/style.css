@@ -457,6 +457,49 @@ section.contents {
 }
 /* Content END */
 
+/* 404 START */
+.container-404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.text-404 {
+    color: #F0ECE5;
+    text-align: center;
+}
+
+.text-404 h1 {
+    font-size: 3em;
+}
+
+.text-404 p {
+    margin-top: 20px;
+}
+
+.text-404 a {
+    margin-top: 30px;
+    color: #F0ECE5;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #31304D;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.text-404 a:hover {
+    background-color: #B6BBC4;
+    color: #31304D;
+    transition: 0.2s;
+}
+
+.image-404 img{
+    width: 200px;
+}
+
+/* 404 END */
+
 
 /** For Mobile Devices **/
 @media(max-width:768px) {

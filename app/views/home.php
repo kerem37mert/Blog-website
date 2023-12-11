@@ -2,18 +2,12 @@
     <main>
         <section class="contents">
             <section class="big-contents">
+                <?php foreach($this->highlightsData as $hData): ?>
                 <article class="big-content">
-                    <img src="<?php echo BASE_URL ?>public/images/1.png" alt="">
-                    <a class="big-content-link" href="">Git</a>
+                    <img src="<?php echo BASE_URL ?>public/images/highlights/<?php echo $hData->content_img; ?>" alt="<?php echo $hData->content_name; ?>">
+                    <a class="big-content-link" href="<?php echo $hData->content_url; ?>">Git</a>
                 </article>
-                <article class="big-content">
-                    <img src="<?php echo BASE_URL ?>public/images/1.png" alt="">
-                    <a class="big-content-link" href="">Git</a>
-                </article>
-                <article class="big-content">
-                    <img src="<?php echo BASE_URL ?>public/images/1.png" alt="">
-                    <a class="big-content-link" href="">Git</a>
-                </article>
+                <?php endforeach; ?>
             </section>
             <section class="home-contents">
                 <?php foreach ($this->contentsData as $contentData): ?>

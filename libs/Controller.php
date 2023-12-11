@@ -4,7 +4,6 @@ require_once "Model.php";
 
 class Controller
 {
-
     public $model;
     public $title;
     public $description;
@@ -17,11 +16,16 @@ class Controller
     public $x;
     public $instagram;
 
+    public $randomContents;
+    public $lastContents;
+
 
     public function __construct()
     {
         $this->model = new Model();
         $this->getWebInfoData();
+        $this->getRandomContentsData();
+        $this->getLastContents();
     }
 
     public function getWebInfoData()
@@ -37,5 +41,15 @@ class Controller
         $this->linkedin = $data["webinfo_linkedin"];
         $this->x = $data["webinfo_x"];
         $this->instagram = $data["webinfo_instagram"];
+    }
+
+    public function getRandomContentsData()
+    {
+        $this->randomContents = $this->model->randomContentsData();
+    }
+
+    public function getLastContents()
+    {
+        $this->lastContents = $this->model->lastContentsData();
     }
 }
