@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $this->title; ?></title>
     <meta name="description" content="<?php echo $this->description; ?>">
+    <link rel="icon" type="image/x-icon" href="<?php echo BASE_URL; ?>public/images/<?php echo $this->favicon; ?>">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>public/css/style.css">
 </head>
 <body>

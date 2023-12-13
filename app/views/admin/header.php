@@ -25,7 +25,7 @@
                     <a href="">Yazılarım</a>
                 </li>
                 <li>
-                    <a href="">Ayarlar</a>
+                    <a href="<?php echo BASE_URL ?>admin/settings">Ayarlar</a>
                 </li>
             </ul>
         </div>

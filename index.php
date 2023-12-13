@@ -103,6 +103,10 @@ switch ($address[0]):
                         $adminController->newContent();
                         break;
 
+                    case "settings":
+                        $adminController->settings();
+                        break;
+
                     default:
                         header("location:".BASE_URL."404");
                         exit;
@@ -121,6 +125,18 @@ switch ($address[0]):
         switch($address[1]):
             case "logincontrol":
                 $adminController->loginControl();
+                break;
+                
+            case "addcontent":
+                if($adminController->sessionControl()):
+                    $adminController->addContent();
+                endif;
+                break;
+
+            case "updatesettings":
+                if($adminController->sessionControl()):
+                    $adminController->updateSettings();
+                endif;
                 break;
         endswitch;
         break;

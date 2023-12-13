@@ -92,6 +92,22 @@ class Database
         }
     }
 
+    public function update($query, $params=null)
+    {
+        try {
+            if(is_null($params)):
+                $this->stmt = $this->pdo->query($query);
+            else:
+                $this->stmt = $this->pdo->prepare($query);
+                $this->stmt->execute($params);
+            endif;
+        }
+        catch(PDOException $e)
+        {
+            die($e->getMessage());
+        }
+    }
+
     public function __destruct()
     {
         $this->pdo = null;
