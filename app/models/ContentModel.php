@@ -1,5 +1,7 @@
 <?php
 
+require_once "libs/Database.php";
+
 class ContentModel extends Database
 {
     public function contentData($url)

@@ -56,6 +56,24 @@ class Database
         }
     }
 
+    public function getRowCount($query, $params=null)
+    {
+        try {
+            if(is_null($params)):
+                $this->stmt = $this->pdo->query($query);
+            else:
+                $this->stmt = $this->pdo->prepare($query);
+                $this->stmt->execute($params);
+            endif;
+
+            return $this->stmt->rowCount();
+        }
+        catch(PDOException $e)
+        {
+            die($e->getMessage());
+        }
+    }
+
     public function insert($query, $params=null)
     {
         try {

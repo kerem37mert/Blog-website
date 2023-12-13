@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #161A30;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Login Start */
+.login {
+    background-color: #31304D;
+    width: 30%;
+    margin: 100px auto;
+}
+
+.login h1 {
+    font-size: 1.5em;
+    padding: 10px;
+    border-bottom: 1px solid #F0ECE5;
+    text-align: center;
+    color: #F0ECE5;
+}
+
+.login form {
+    padding: 0 20px 20px;
+}
+
+.login input {
+    display: block;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #161A30;
+}
+
+.login label {
+    color: #F0ECE5;
+    display: block;
+    margin-top: 20px;
+}
+
+.login button {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #31304D;
+    background-color: #F0ECE5;
+    border: none;
+}
+
+.login button:hover {
+    background-color: #161A30;
+    color: #F0ECE5;
+    transition: 0.2s;
+}
+
+ @media(max-width: 768px) {
+     .login {
+         width: 90%;
+     }
+ }
+/* Login END */
+
+
+/* OTHER PAGES STYLES START */
+.container {
+    display: flex;
+}
+
+
+/* LEFTBAR START */
+aside {
+    flex: 1;
+    background-color: #31304D;
+}
+
+aside .aside-top {
+    border-bottom: none;
+}
+
+aside .aside-top h1{
+    color: #F0ECE5;
+    font-size: 1.5em;
+    text-align:center;
+    padding: 20px;
+}
+
+.aside-menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.aside-menu ul li {
+    list-style: none;
+}
+
+.aside-menu ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #F0ECE5;
+    display: block;
+    text-align: center;
+}
+
+.aside-menu ul li a:hover {
+    background-color: #B6BBC4;
+    color: #161A30;
+    transition: 0.2s;
+}
+/* LEFTBAR END */
+
+
+main {
+    flex: 5;
+}
+
+/* NAVBAR START*/
+nav {
+    background-color: #B6BBC4;
+    position: relative;
+}
+
+nav .open-button {
+    position: absolute;
+    left: 1%;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #161A30;
+}
+
+nav ul li a:hover {
+    background-color: #31304D;
+    color: #F0ECE5;
+    transition: 0.2s;
+}
+/* NAVBAR END*/
+
+
+/* SECTIONS START */
+.admin-container {
+    margin: 40px;
+}
+
+.shortcuts {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.shortcuts div {
+    flex: 1;
+    background-color: #B6BBC4;
+    text-align: center;
+}
+
+.shortcuts div:nth-child(1) {
+    margin-right: 20px;
+}
+.shortcuts div a {
+    display: block;
+    padding: 20px;
+    color: #161A30;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.big-section {
+    margin-top: 60px;
+}
+
+.big-section h1 {
+    color: #F0ECE5;
+    font-size: 1.5em;
+    border-bottom: 1px solid #F0ECE5;
+    margin-bottom: 20px;
+}
+
+.big-contents {
+    display: flex;
+}
+
+.big-contents .big-item {
+    flex: 1;
+    padding: 20px;
+    align-items: center;
+}
+
+.big-item img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* FORM START */
+.form-container {
+    border: none;
+}
+
+.form-container h1 {
+    font-size: 1.5em;
+    color: #F0ECE5;
+    border-bottom: 1px solid #F0ECE5;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    display: block;
+    padding: 8px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    color: #161A30;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.form-group input[type="file"] {
+    background-color: #B6BBC4;
+}
+
+
+.form-group label {
+    display: block;
+    color: #F0ECE5;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.form-button {
+    text-align: center;
+}
+
+.form-button input[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: #B6BBC4;
+    color: #161A30;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.form-button input[type="submit"]:hover {
+    background-color: #31304D;
+    color: #F0ECE5;
+    transition: 0.2s;
+}
+
+.form-message-success {
+    background-color: #B6BBC4;
+    color: #161A30;
+    padding: 10px;
+    font-size: 0.9em;
+    margin: 20px 0;
+}
+
+.form-message-error {
+    background-color: #FF3333;
+    color: #F0ECE5;
+    padding: 10px;
+    font-size: 0.9em;
+    margin: 20px 0;
+}
+/* FORM END */
+
+/* SECTIONS END */
+
+
+
+/* FOR MOBILE DEVICES */
+@media (max-width: 768px) {
+    /* LEFTBAR START */
+    aside {
+        display: none;
+    }
+    /* LEFTBAR END */
+
+
+    /* SECTIONS START*/
+    .admin-container {
+        margin: 40px 10px;
+    }
+
+    .big-contents {
+        display: block;
+    }
+
+    /* SECTIONS END */
+}
+/* OTHER PAGES STYLES END */

@@ -71,7 +71,7 @@ const lenControl = () => {
     if(!(email.value.length >= 5 && email.value.length <= 50)) {
         errorMessage += "* Email alanı 5 ile 50 karakter arası uzunlukta olmalıdır<br>";
         email.style.borderColor = "#FF3333";
-        email++;
+        error++;
     }
     else {
         email.style.borderColor = "#F0ECE5";

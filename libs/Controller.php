@@ -1,6 +1,7 @@
 <?php
 
 require_once "Model.php";
+require_once "services/cleanText.php";
 
 class Controller
 {
@@ -43,13 +44,27 @@ class Controller
         $this->instagram = $data["webinfo_instagram"];
     }
 
-    public function getRandomContentsData()
+    private function getRandomContentsData()
     {
         $this->randomContents = $this->model->randomContentsData();
     }
 
-    public function getLastContents()
+    private function getLastContents()
     {
         $this->lastContents = $this->model->lastContentsData();
+    }
+
+    public function getSearchContents()
+    {
+        header('Content-Type: application/json; charset=utf-8');
+
+        $contentsDataOBJ = $this->model->searchContents(cleanText($_GET["s"]));
+        $contentDataArray = [];
+
+        foreach($contentsDataOBJ as $data):
+            array_push($contentDataArray, ["content_title" => $data->content_title, "content_url" => BASE_URL."content/".$data->content_url]);
+        endforeach;
+
+        echo json_encode($contentDataArray);
     }
 }

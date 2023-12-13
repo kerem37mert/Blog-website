@@ -18,4 +18,9 @@ class Model extends Database
     {
         return $this->getRows("SELECT content_title, content_url FROM contents order by content_date DESC limit 5");
     }
+
+    public function searchContents($search)
+    {
+        return $this->getRows("SELECT content_title, content_url FROM contents where content_title LIKE ?", ["%".$search."%"]);
+    }
 }

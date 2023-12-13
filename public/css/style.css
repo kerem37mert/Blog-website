@@ -73,7 +73,7 @@ aside.right-bar {
 
 .vertical-menu {
     background-color: #31304D;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .vertical-menu .menu-title {
@@ -109,7 +109,7 @@ aside.right-bar {
 }
 
 .search-bar {
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .search-bar input[type="search"] {
@@ -123,6 +123,17 @@ aside.right-bar {
 
 .search-bar input[type="search"]::placeholder {
     color: #161A30;
+}
+
+#searchMenu {
+    display: none;
+    margin: 0 0 20px !important;
+}
+
+#searchMenu .not-found {
+    text-align: center;
+    padding: 10px;
+    color: #F0ECE5;
 }
 
 section.contents {
@@ -229,6 +240,12 @@ section.contents {
 }
 
 .pagination .item:hover {
+    background-color: #31304D;
+    color: #F0ECE5;
+    transition: 0.2s;
+}
+
+.pagination .active {
     background-color: #31304D;
     color: #F0ECE5;
     transition: 0.2s;

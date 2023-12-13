@@ -1,8 +1,8 @@
     <aside class="right-bar">
         <section class="search-bar">
-            <form action="" method="GET">
-                <input type="search" name="s" placeholder="Ara...">
-            </form>
+            <input type="search" name="s" placeholder="Ara...">
+        </section>
+        <section id="searchMenu" class="vertical-menu">
         </section>
         <section class="vertical-menu">
             <h3 class="menu-title">Rastgele İçerikler</h3>
