@@ -16,29 +16,29 @@
         <div class="aside-menu">
             <ul>
                 <li>
-                    <a href="<?php echo BASE_URL ?>admin/home">Ana Sayfa</a>
+                    <a href="<?php echo BASE_URL; ?>admin/home">Ana Sayfa</a>
                 </li>
                 <li>
-                    <a href="<?php echo BASE_URL ?>admin/newcontent">Yeni Yazı</a>
+                    <a href="<?php echo BASE_URL; ?>admin/newcontent">Yeni Yazı</a>
                 </li>
                 <li>
-                    <a href="">Yazılarım</a>
+                    <a href="<?php echo BASE_URL ?>admin/contents">Yazılarım</a>
                 </li>
                 <li>
-                    <a href="<?php echo BASE_URL ?>admin/settings">Ayarlar</a>
+                    <a href="<?php echo BASE_URL; ?>admin/settings">Ayarlar</a>
                 </li>
             </ul>
         </div>
     </aside>
     <main>
         <nav>
-            <img class="open-button" src="svg/hamburger-menu-svgrepo-com.svg" alt="">
+            <img class="open-button" src="<?php echo BASE_URL; ?>public/admin/svg/hamburger-menu-svgrepo-com.svg" alt="">
             <ul>
                 <li>
                     <a href="">Profil</a>
                 </li>
                 <li>
-                    <a href="<?php echo BASE_URL ?>admin/logout">Çıkış Yap</a>
+                    <a href="<?php echo BASE_URL; ?>admin/logout">Çıkış Yap</a>
                 </li>
             </ul>
         </nav>

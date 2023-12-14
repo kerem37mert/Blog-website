@@ -290,6 +290,115 @@ nav ul li a:hover {
 }
 /* FORM END */
 
+/* CONTENTS START */
+.contents {
+    border: none;
+}
+
+.contents h1 {
+    font-size: 1.5em;
+    color: #F0ECE5;
+    border-bottom: 1px solid #F0ECE5;
+    margin-bottom: 20px;
+}
+
+.content-container {
+    background-color: #B6BBC4;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.content-container a {
+    color: #161A30;
+    font-size: 1.2em;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.content-container a:hover {
+    text-decoration: underline;
+}
+
+.content-container p {
+    color: #161A30;
+    margin-top: 5px;
+}
+/* CONTENTS END */
+
+
+/* MESSAGES START */
+.messages h1 {
+    font-size: 1.5em;
+    color: #F0ECE5;
+    border-bottom: 1px solid #F0ECE5;
+    margin-bottom: 20px;
+}
+
+.messages-container a, .messages-container .m-err {
+    display: flex;
+    justify-content: space-between;
+    color: #F0ECE5;
+    text-decoration: none;
+    padding: 8px 10px;
+}
+
+.messages-container a:hover {
+    background-color: #31304D;
+    transition: 0.2s;
+}
+/* MESSAGES END */
+
+/* MESSAGE START */
+.message {
+    background-color: #B6BBC4;
+}
+
+.message h1 {
+    font-size: 1.5em;
+    color: #161A30;
+    padding: 20px;
+}
+
+.message .message-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border: 1px solid #161A30;
+    border-left: none;
+    border-right: none;
+}
+
+.message-menu .message-menu-item span{
+    font-weight: 700;
+}
+
+.message p {
+    padding: 20px;
+}
+
+.admin-buttons {
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+.admin-buttons a {
+    padding: 6px 12px;
+    text-decoration: none;
+    background-color: #31304D;
+    color: #F0ECE5;
+    border-radius: 5px;
+}
+
+.admin-buttons a:nth-child(1) {
+    margin-right: 10px;
+}
+
+.admin-buttons a:hover {
+    background-color: #161A30;
+    transition: 0.2s;
+}
+/* MESSSAGE END */
+
 /* SECTIONS END */
 
 

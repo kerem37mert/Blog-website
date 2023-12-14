@@ -29,7 +29,7 @@ class ContentsController extends Controller
             $this->page = 1;
         endif;
 
-        $this->limit = 1;     //Sayfa gözükcek maksimum veri miktarı
+        $this->limit = 10;     //Sayfada gözükcek maksimum veri miktarı
         $this->start = ($this->page - 1) * $this->limit;
         $this->totalPage = ceil($this->totalContents / $this->limit);
 

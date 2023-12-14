@@ -1,4 +1,4 @@
-<?php echo require_once "header.php" ?>
+<?php require_once "header.php" ?>
             <!-- SECTIONS START -->
             <section class="admin-container">
                 <section class="form-container">
@@ -58,6 +58,6 @@
             <!-- SECTIONS END -->
         </main>
     </div>
-    <script src="js/menuController.js"></script>
+    <script src="<?php echo BASE_URL; ?>public/admin/js/menuController.js"></script>
 </body>
 </html>

@@ -107,6 +107,32 @@ switch ($address[0]):
                         $adminController->settings();
                         break;
 
+                    case "content":
+                        if(empty($address[2])):
+                            header("location:".BASE_URL."404");
+                            exit;
+                        else:
+                            $adminController->content($address[2]);
+                        endif;
+                        break;
+
+                    case "contents":
+                        $adminController->contents();
+                        break;
+
+                    case "messages":
+                        $adminController->messages();
+                        break;
+
+                    case "message":
+                        if(empty($address[2])):
+                            header("location:".BASE_URL."404");
+                            exit;
+                        else:
+                            $adminController->message($address[2]);
+                        endif;
+                        break;
+
                     default:
                         header("location:".BASE_URL."404");
                         exit;
@@ -136,6 +162,24 @@ switch ($address[0]):
             case "updatesettings":
                 if($adminController->sessionControl()):
                     $adminController->updateSettings();
+                endif;
+                break;
+
+            case "updatecontent":
+                if($adminController->sessionControl()):
+                    $adminController->updateContent();
+                endif;
+                break;
+
+            case "updatehighlights":
+                if($adminController->sessionControl()):
+                    $adminController->updatehighlights();
+                endif;
+                break;
+
+            case "deletemessage":
+                if($adminController->sessionControl()):
+                    $adminController->deleteMessage();
                 endif;
                 break;
         endswitch;
