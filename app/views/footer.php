@@ -10,19 +10,19 @@
             <div class="footer-links">
                 <ul>
                     <li>
-                        <a href="">Forum</a>
+                        <a href="<?php echo BASE_URL ?>contents">Blog</a>
                     </li>
                     <li>
-                        <a href="">Yararlı İçerikler</a>
+                        <a href="">Yararlı Bağlantılar</a>
                     </li>
                     <li>
-                        <a href="">Rastgele Düşünceler</a>
+                        <a href="">Dış Kaynaklar</a>
                     </li>
                     <li>
-                        <a href="">İletişim</a>
+                        <a href="<?php echo BASE_URL ?>contact">İletişim</a>
                     </li>
                     <li>
-                        <a href="">Blog</a>
+                        <a href="<?php echo BASE_URL ?>about">Hakkımda</a>
                     </li>
                 </ul>
             </div>
@@ -49,22 +49,22 @@
                 <h3 class="social-title">Takip Et!</h3>
                 <div class="social-items">
                     <div class="social-item">
-                        <a href="<?php echo $this->github; ?>">
+                        <a href="<?php echo $this->github; ?>" target="_blank">
                             <img src="<?php echo BASE_URL ?>public/svg/github-svgrepo-com.svg" alt="github" class="social-logo">
                         </a>
                     </div>
                     <div class="social-item">
-                        <a href="<?php echo $this->linkedin; ?>">
+                        <a href="<?php echo $this->linkedin; ?>" target="_blank">
                             <img src="<?php echo BASE_URL ?>public/svg/linkedin-161-svgrepo-com.svg" alt="lİnkedin" class="social-logo">
                         </a>
                     </div>
                     <div class="social-item">
-                        <a href="<?php echo $this->x; ?>">
+                        <a href="<?php echo $this->x; ?>" target="_blank">
                             <img src="<?php echo BASE_URL ?>public/svg/Twitter-X.svg" alt="X" class="social-logo">
                         </a>
                     </div>
                     <div class="social-item">
-                        <a href="<?php echo $this->instagram; ?>">
+                        <a href="<?php echo $this->instagram; ?>" target="_blank">
                             <img src="<?php echo BASE_URL ?>public/svg/instagram-svgrepo-com.svg" alt="instagram" class="social-logo">
                         </a>
                     </div>

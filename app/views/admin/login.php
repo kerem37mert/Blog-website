@@ -10,6 +10,11 @@
 <body>
     <div class="login">
         <h1>Giriş Yap</h1>
+        <?php if(isset($_GET["login"]) && $_GET["login"] == "false"): ?>
+            <div class="form-message-error">
+                Giriş Başarısız
+            </div>
+        <?php endif; ?>
         <form action="<?php echo BASE_URL."adminoperation/logincontrol" ?>" method="POST">
             <label>Email</label>
             <input type="email" name="email" required>

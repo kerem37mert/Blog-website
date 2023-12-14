@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ana Sayfa</title>
+    <title>Yönetim Sayfası</title>
     <link rel="stylesheet" href="<?php echo BASE_URL ?>public/admin/css/style.css">
 </head>
 <body>
@@ -34,9 +34,11 @@
         <nav>
             <img class="open-button" src="<?php echo BASE_URL; ?>public/admin/svg/hamburger-menu-svgrepo-com.svg" alt="">
             <ul>
+                <!--
                 <li>
                     <a href="">Profil</a>
                 </li>
+                -->
                 <li>
                     <a href="<?php echo BASE_URL; ?>admin/logout">Çıkış Yap</a>
                 </li>

@@ -135,14 +135,17 @@ class AdminController
 
     public function loginControl()
     {
+        $login = "false";
+
         $email = cleanText($_POST["email"]);
         $password = md5(cleanText($_POST["password"]));
 
         if($this->adminModel->userCount($email, $password)):
             $_SESSION["admin"] = $email;
+            $login = "true";
         endif;
 
-        header("location:".BASE_URL."admin");
+        header("location:".BASE_URL."admin?login=".$login);
         exit;
     }
 

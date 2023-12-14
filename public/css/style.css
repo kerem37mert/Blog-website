@@ -160,7 +160,7 @@ section.contents {
     top: 75%;
     left: 50%;
     transform: translate(-50%, -75%);
-    color: #161A30;
+    color: #F0ECE5;
     font-weight: 500;
     background-color: rgba(182,187,196, 0.25);
     padding: 10px 20px;
@@ -184,7 +184,7 @@ section.contents {
 
 .home-content {
     margin-bottom: 10px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .home-content a {
