@@ -223,4 +223,13 @@ class AdminController
         header("location:".BASE_URL."admin/messages?status=true");
         exit;
     }
+
+    public function deleteContent()
+    {
+        $content_url = cleanText($_GET["content_url"]);
+
+        $this->adminModel->deleteContent($content_url);
+        header("location:".BASE_URL."admin/contents?status=true");
+        exit;
+    }
 }

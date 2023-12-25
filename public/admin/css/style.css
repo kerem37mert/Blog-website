@@ -273,6 +273,12 @@ nav ul li a:hover {
     transition: 0.2s;
 }
 
+.form-del {
+    color: #F0ECE5;
+    display: inline-block;
+    margin-left: 20px;
+}
+
 .form-message-success {
     background-color: #B6BBC4;
     color: #161A30;
@@ -322,6 +328,14 @@ nav ul li a:hover {
 .content-container p {
     color: #161A30;
     margin-top: 5px;
+}
+
+.content-del {
+    padding: 7px 12px;
+    text-decoration: none;
+    background-color: #FF3333;
+    color: #F0ECE5;
+    margin-left: 10px;
 }
 /* CONTENTS END */
 

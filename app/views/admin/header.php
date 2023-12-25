@@ -27,6 +27,9 @@
                 <li>
                     <a href="<?php echo BASE_URL; ?>admin/settings">Ayarlar</a>
                 </li>
+                <li>
+                    <a href="<?php echo BASE_URL; ?>">Siteyi Görüntüle</a>
+                </li>
             </ul>
         </div>
     </aside>

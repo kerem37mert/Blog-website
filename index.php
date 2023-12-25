@@ -62,7 +62,7 @@ switch ($address[0]):
         break;
 
 
-    //OPERATIONS
+    //OPERATIONS START
     case "operation":
         //Mesaj Göndeme
         if($address[1] == "sendmessage"):
@@ -82,7 +82,7 @@ switch ($address[0]):
             exit;
         endif;
         break;
-    //OPERATIONS
+    //OPERATIONS END
 
 
     // ADMIN START //
@@ -180,6 +180,12 @@ switch ($address[0]):
             case "deletemessage":
                 if($adminController->sessionControl()):
                     $adminController->deleteMessage();
+                endif;
+                break;
+
+            case "deletecontent":
+                if($adminController->sessionControl()):
+                    $adminController->deleteContent();
                 endif;
                 break;
         endswitch;

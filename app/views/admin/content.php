@@ -35,6 +35,7 @@
                         </div>
                         <div class="form-button">
                             <input type="submit" value="Kaydet">
+                            <a class="form-del" href="<?php echo BASE_URL; ?>adminoperation/deletecontent?content_url=<?php echo $this->contentData["content_url"]; ?>">Sil</a>
                         </div>
                     </form>
                 </section>

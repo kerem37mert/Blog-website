@@ -59,6 +59,11 @@ class AdminModel extends Database
         $this->delete("DELETE FROM contact where contact_id=?", [$id]);
     }
 
+    public function deleteContent($url)
+    {
+        $this->delete("DELETE FROM contents where content_url=?", [$url]);
+    }
+
 
     public function contentsData()
     {

@@ -3,6 +3,11 @@
             <section class="admin-container">
                 <section class="contents">
                     <h1>Yazılar</h1>
+                    <?php if(isset($_GET["status"]) && $_GET["status"] == "true"): ?>
+                        <div class="form-message-success">
+                            İçerik silindi
+                        </div>
+                    <?php endif; ?>
                     <?php foreach($this->contentsData as $content): ?>
                     <article class="content-container">
                         <a href="<?php echo BASE_URL."admin/content/".$content->content_url; ?>"><?php echo $content->content_title; ?></a>
