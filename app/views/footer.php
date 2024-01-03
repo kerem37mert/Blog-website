@@ -76,6 +76,7 @@
         </div>
     </footer>
 
+    <script src="<?php echo BASE_URL ?>public/js/snow.js"></script>
     <script src="<?php echo BASE_URL ?>public/js/menuController.js"></script>
     <script src="<?php echo BASE_URL ?>public/js/contactControl.js"></script>
     <script src="<?php echo BASE_URL ?>public/js/searchContent.js"></script>
