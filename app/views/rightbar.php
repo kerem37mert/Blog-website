@@ -19,7 +19,7 @@
             <ul>
                <?php foreach($this->lastContents as $lastContent): ?>
                 <li>
-                    <a href="<?php echo BASE_URL."/content/".$lastContent->content_url; ?>"><?php echo $lastContent->content_title; ?></a>
+                    <a href="<?php echo BASE_URL."content/".$lastContent->content_url; ?>"><?php echo $lastContent->content_title; ?></a>
                 </li>
                 <?php endforeach; ?>
             </ul>

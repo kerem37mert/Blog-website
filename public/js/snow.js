@@ -30,7 +30,7 @@ const moveSnow = (snow) => {
         const currentPosition = parseFloat(snow.style.top);
         snow.style.top = `${currentPosition + 10}px`;
 
-        if(currentPosition >= body.offsetHeight - 10) {
+        if(currentPosition >= body.offsetHeight) {
             snow.style.display = "none";
         }
 

@@ -29,19 +29,19 @@
             <div class="footer-links">
                 <ul>
                     <li>
-                        <a href="">Rastgele Düşünceler</a>
+                        <a href="https://github.com/kerem37mert/Snow-JS">Snow JS</a>
                     </li>
                     <li>
-                        <a href="">Farklı Şeyler</a>
+                        <a href="https://github.com/kerem37mert/bilgi-oyunu">React Native Oyun</a>
                     </li>
                     <li>
-                        <a href="">JAVA VS .NET</a>
+                        <a href="https://github.com/kerem37mert/flow-diagrams">Akış Diyagramları</a>
                     </li>
                     <li>
-                        <a href="">SOLID Prensipleri</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.keremmert.notes&pcampaignid=web_share">Notlarım Android</a>
                     </li>
                     <li>
-                        <a href="">Sosyal Medya</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.islemoyunu&pcampaignid=web_share">İşlem Oyunu Android</a>
                     </li>
                 </ul>
             </div>
