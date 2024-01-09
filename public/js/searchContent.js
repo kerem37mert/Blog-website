@@ -1,7 +1,7 @@
 const searchInput = document.querySelector('input[name="s"]');
 
 const searchAPI = async () => {
-    const url = `http://localhost/site/operation/search?s=${searchInput.value}`;
+    const url = `/site/operation/search?s=${searchInput.value}`;
 
     try {
         const response = await fetch(url);
