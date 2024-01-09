@@ -13,16 +13,16 @@
                         <a href="<?php echo BASE_URL ?>contents">Blog</a>
                     </li>
                     <li>
-                        <a href="">Yararlı Bağlantılar</a>
-                    </li>
-                    <li>
-                        <a href="">Dış Kaynaklar</a>
+                        <a href="<?php echo BASE_URL ?>about">Hakkımda</a>
                     </li>
                     <li>
                         <a href="<?php echo BASE_URL ?>contact">İletişim</a>
                     </li>
                     <li>
-                        <a href="<?php echo BASE_URL ?>about">Hakkımda</a>
+                        <a href="https://github.com/kerem37mert/javascriptgame">Javascript Game</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kerem37mert/dark-website-full">Dark Website</a>
                     </li>
                 </ul>
             </div>
