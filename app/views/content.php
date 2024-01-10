@@ -11,4 +11,3 @@
         <!-- Right Bar END -->
     </main>
 <?php require_once "footer.php"; ?>
-<?php
