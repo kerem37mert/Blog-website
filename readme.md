@@ -6,3 +6,4 @@
 * Admin sayfasına **"/admin"** ile erişebilirsiniz.(Kurulum kök dizine yapıldıysa)
 * Admin giriş bilgileri
 Email: **123456@admin.com** - Parola: **123456**
+* CK Editör CDN ile dahil edildiği için internet bağlantısıyla kullanılabilmektedir.
