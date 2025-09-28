@@ -1,4 +1,4 @@
-# Dark Blue Website
+# Blog Website
 ![Website](readme.png)
 
 * Eğer site "/site/" dizinine kurulmayacaksa sitenin kurulacağı dizinin **index.php("BASE_URL")** ve **public/js/searchContent.js("url")** değerlerini siteyi kuracağınız dizine göre değiştirmeniz gerekiyor. 
